@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --color0: #01304f;
+    --color1: #4180ab;
+    --color2: #8ab3cf;
+    --color3: #bdd1de;
+    --color4: #e4ebf0;
+    --color5: #ffffff;
+}
+Body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+.Header {
+    background-color: var(--color0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+.orcamento {
+    background: linear-gradient(140.14deg, #ff9028 15.05%, #f33a1e 114.99%) padding-box,
+    linear-gradient(142.51deg, #ff9665 8.65%, #af1905 88.82%) border-box;
+    border-radius: 7px;
+    border: 2px solid transparent;
+    text-shadow: 1px 1px 1px #00000040;
+    box-shadow: 3px 3px 6px 0px #45090059;
+    padding: 10px 40px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: all 0.1s;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    height: 3rem;
+}
+
+.orcamento:active {
+    box-shadow: none;
+    opacity: 80%;
+}
+
+.link-group {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espaçamento entre os links */
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.linkheader {
+    color: var(--color4);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Espaçamento entre o ícone e o texto */
+}
+
+.linkheader img {
+    height: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .Header {
+        flex-direction: column;
+    }
+
+    .orcamento {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .link-group {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .linkheader {
+        width: 100%;
+        text-align: center;
+        padding: 0.5rem 0;
+        justify-content: center;
+    }
+}
